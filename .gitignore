@@ -125,3 +125,5 @@ dmypy.json
 .pyre/
 
 *.csv
+.gitattributes
+.DS_Store

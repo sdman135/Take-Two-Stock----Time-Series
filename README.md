@@ -43,7 +43,7 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
     We can also see the distribution is not normal, as the data is not centered around 0.
 
-    ![](images/monthly_dist.png)
+  ![](images/monthly_dist.png)
 
   -  I had to separate the seasonality and trend from the data. I did this using two different methods:
 

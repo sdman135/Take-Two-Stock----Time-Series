@@ -42,6 +42,7 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
     As we can see above, the Test Statistics values is lower then the critical values and the p-value is much higher then the acceptable alpha value of 0.05
 
     We can also see the distribution is not normal, as the data is not centered around 0.
+
     ![](images/monthly_dist.png)
 
   -  I had to separate the seasonality and trend from the data. I did this using two different methods:
@@ -62,13 +63,17 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
 * ARIMA Modeling and Error/Accuracy Computing
 
-  - Next I used an Auto Arima model to find the optimal Arima values for the forecasting. I forecasted the timeseries data with a custom function, using the optimal ARIMA values. The function also calculates the: 
+  - Next I used an Auto Arima model to find the optimal Arima values for the forecasting. I forecasted the timeseries data with a custom function, using the optimal ARIMA values. The function also calculates the:
     - Mean Squared Error (mse),
     - Mean Absolute Error (mae),
     - Root Mean Squared Error (rmse),
     - Mean Absolute Percentage Error (mape)
     - Model's accuracy.
-![](images/.png)
+![](images/forecast_base.png)
+
+  - Lastly I used the Arima model to forecast for the remainder of the year's stock closing prices.
+![](images/forecast_final.png)
+
 
 Hope You enjoyed my Time Series Forecast Analysis Project on Take-Two Interactive Stock Price.
 

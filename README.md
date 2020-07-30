@@ -28,7 +28,7 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
   Boxplot showing the range of stock prices grouped by year
 ![](images/boxplot.png)
 
-  Plot of the daily closing price for the stocks over the entire time period
+  Plot of the daily closing prices for the stocks over the entire time period
 ![](images/daily_stocks.png)
 
 
@@ -37,19 +37,19 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
   - Made a function to easily be called on a timeseries dataframe to run the Augmented Dickey Fuller (ADF) test, to check for seasonality. The test showed the data was not stationary and as is the data can not be used with ARIMA.
 
-![](images/Log_Diff.png)
+![](images/ADF_orginal.png)
 
   -  I had to separate the seasonality and trend from the data. I did this using two different methods:
 
   1) Applying Transformations and using Differencing
-![](images/Log_Diff.png)
+![](images/ADF_Log_Diff.png)
   The best preforming actions, based on ADF test, were a Log Transformation of the first Difference with a shift of 12 months (yearly seasonality)
 
   2) Seasonal decomposition
 ![](images/seasonal_decompo.png)
   By far the easier of the two methods
 
-* ARIMA Modeling and
+* ARIMA Modeling and Error/Accuracy Computing
 
   - .
 ![](images/botometer_example.png)

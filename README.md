@@ -41,8 +41,7 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
     As we can see above, the Test Statistics values is lower then the critical values and the p-value is much higher then the acceptable alpha value of 0.05
 
-    We can also see the distribution is not normal, as the data is not centered around 0.
-
+  We can also see the distribution is not normal, as the data is not centered around 0.
   ![](images/monthly_dist.png)
 
   -  I had to separate the seasonality and trend from the data. I did this using two different methods:

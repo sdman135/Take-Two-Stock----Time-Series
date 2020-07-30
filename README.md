@@ -46,15 +46,17 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
   -  I had to separate the seasonality and trend from the data. I did this using two different methods:
 
+
   1) Applying Transformations and using Differencing:
 ![](images/ADF_Log_Diff.png)
 
     As we can see above, the Test Statistics values is lower then the critical values and the p-value is much higher then the acceptable alpha value of 0.05
 
   The best preforming actions, based on ADF test, were a Log Transformation of the first Difference with a shift of 12 months (yearly seasonality)
-
   We can also see the distribution is pretty normal
+
   ![](images/log_diff_dist.png)
+
 
   2) Seasonal decomposition:
 ![](images/seasonal_decompo.png)

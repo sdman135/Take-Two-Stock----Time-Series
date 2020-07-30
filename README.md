@@ -21,9 +21,10 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 * Exploratory Data Analysis:
 
   -  I made a few graphs and charts to explore and analysis the data I will be working with.
-![](images/polarity_examaple.png)
-
-
+  Line Graph showing the stock prices by month and grouped by year
+![](images/yearly_stock.png)
+  Boxplot showing the range of stock prices grouped by year
+![](images/boxplot.png)
 * Tested for Stationarity:
 
 

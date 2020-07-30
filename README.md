@@ -14,7 +14,7 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
 * The Data:
 
-  - The data was taken from https://finance.yahoo.com/, including stock data from 1/4/2010 to 6/2/2020. The Data contained a total of 2622 data points (Open, High, Low, Close and Volume stock values per date the market was opened). I was mainly concerned with the closing stock prices, isn't everyone.
+  - The data was taken from https://finance.yahoo.com/, including stock data from 1/4/2010 to 6/2/2020. The Data contained a total of 2622 data points (Open, High, Low, Adjusted Close and Volume stock values per date the market was opened). I was mainly concerned with the closing stock prices, isn't everyone, so I dropped all unnecessary columns.
 
   - I spilt the data into training and test datasets, to later validate the accuracy of my forecasting and decrease bias. I aggregated the data by weeks, months and years (averaging the values), which also helped with some missing values.
 
@@ -47,7 +47,7 @@ Add me on LinkedIn if you liked.
 
 * Python 3.8
 * Jupyter Notebook 6.0.0
-* A few of the main imports: pandas, tweepy, requests, TextBlob, Botometer
+* A few of the main imports: pandas, numpy, matplotlib/seaborn, statsmodels, pmdarima
 
 
 ## Authors

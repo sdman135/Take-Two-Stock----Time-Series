@@ -41,6 +41,9 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
     As we can see above, the Test Statistics values is lower then the critical values and the p-value is much higher then the acceptable alpha value of 0.05
 
+    We can also see the distribution is not normal, as the data is not centered around 0.
+    ![](images/monthly_dist.png)
+
   -  I had to separate the seasonality and trend from the data. I did this using two different methods:
 
   1) Applying Transformations and using Differencing:
@@ -50,14 +53,22 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
   The best preforming actions, based on ADF test, were a Log Transformation of the first Difference with a shift of 12 months (yearly seasonality)
 
+  We can also see the distribution is pretty normal
+  ![](images/log_diff_dist.png)
+
   2) Seasonal decomposition:
 ![](images/seasonal_decompo.png)
   By far the easier of the two methods
 
 * ARIMA Modeling and Error/Accuracy Computing
 
-  - .
-![](images/botometer_example.png)
+  - Next I used an Auto Arima model to find the optimal Arima values for the forecasting. I forecasted the timeseries data with a custom function, using the optimal ARIMA values. The function also calculates the: 
+    - Mean Squared Error (mse),
+    - Mean Absolute Error (mae),
+    - Root Mean Squared Error (rmse),
+    - Mean Absolute Percentage Error (mape)
+    - Model's accuracy.
+![](images/.png)
 
 Hope You enjoyed my Time Series Forecast Analysis Project on Take-Two Interactive Stock Price.
 

@@ -5,7 +5,7 @@ June 2020
 ![](images/T2_banner.png)
 
 
-For this project I wanted to do a Time Series Forecast Analysis of Take-Two Interactive Software Inc. (TTWO), the parent company of Rockstar and 2KGames, closing stocks of for the last 10 years.
+For this project I wanted to do a Time Series Forecast Analysis of Take-Two Interactive Software Inc. (TTWO), the parent company of Rockstar and 2KGames, closing stocks for the last 10 years.
 
 
 

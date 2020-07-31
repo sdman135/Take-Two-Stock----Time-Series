@@ -39,20 +39,22 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
 ![](images/ADF_orginal.png)
 
-    As we can see above, the Test Statistics value is lower then the critical values and 
-    the p-value is much higher then the acceptable alpha value of 0.05.
-    Indictating the time series is not stationary
+    As we can see above, the Test Statistics value is higher then the critical values and the p-value is much higher
+    then the acceptable alpha value of 0.05. Indictating the time series is not stationary, and can be used for forecast.
+    
 
-  We can also see the distribution is not normal, as the data is not centered around 0.
-![](images/monthly_dist.png)
+  We can also see the distribution is not normal, as the data is not centered around 0
+
+  ![](images/monthly_dist.png)
 
 
- - I had to separate the seasonality and trend from the data. I did this using two different methods:
+  - I had to separate the seasonality and trend from the data. I did this using two different methods:
 
   1) Applying Transformations and using Differencing:
 ![](images/ADF_Log_Diff.png)
 
-    As we can see above, the Test Statistics values is lower then the critical values and the p-value is much higher then the acceptable alpha value of 0.05
+    As we can see above, the Test Statistics values is lower then the critical values and the p-value is much lower
+    then the acceptable alpha value of 0.05. Indictating the time series is stationary, and can be used.
 
   The best preforming actions, based on ADF test, were a Log Transformation of the first Difference with a shift of 12 months (yearly seasonality)
 

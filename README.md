@@ -41,7 +41,7 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
     As we can see above, the Test Statistics value is higher then the critical values and the p-value is much higher
     then the acceptable alpha value of 0.05. Indictating the time series is not stationary, and can be used for forecast.
-    
+
 
   We can also see the distribution is not normal, as the data is not centered around 0
 
@@ -79,6 +79,10 @@ For this project I wanted to do a Time Series Forecast Analysis of Take-Two Inte
 
   - Lastly I used the Arima model to forecast for the remainder of the year's stock closing prices.
 ![](images/forecast_final.png)
+
+* Facebook Prophet
+  - Ran my data through Facebook's Prophet timeseries data model
+  
 
 
 Hope You enjoyed my Time Series Forecast Analysis Project on Take-Two Interactive Stock Price.
